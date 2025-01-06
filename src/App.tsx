@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Classes from './pages/Classes';
 import Styles from './pages/Styles';
@@ -13,18 +14,21 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen">
+      <div className="min-h-screen flex flex-col">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/classes" element={<Classes />} />
-          <Route path="/styles" element={<Styles />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/fitness" element={<Fitness />} />
-          <Route path="/shoots" element={<Shoots />} />
-          <Route path="/trainers" element={<Trainers />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/classes" element={<Classes />} />
+            <Route path="/styles" element={<Styles />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/fitness" element={<Fitness />} />
+            <Route path="/shoots" element={<Shoots />} />
+            <Route path="/trainers" element={<Trainers />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </Router>
   );

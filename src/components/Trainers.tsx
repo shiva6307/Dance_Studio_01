@@ -1,5 +1,8 @@
 import React from 'react';
-
+import img1 from '../assets/trainer-atul-tiwari.jpg';
+import img2 from '../assets/trainer-prem-chopra.jpg';
+import img3 from '../assets/trainer-riddhima-tiwari.jpg';
+import img4 from '../assets/trainer-sonu-j-hop.jpg';
 const Trainers = () => {
   const trainers = [
     {
@@ -8,7 +11,7 @@ const Trainers = () => {
       experience: '7 years',
       description: 'Former principal dancer with extensive teaching experience',
       image:
-        'src/assets/trainer-prem-chopra.jpg',
+        img2,
     },
     {
       name: 'Riddhima Tiwari',
@@ -17,7 +20,7 @@ const Trainers = () => {
       description:
         'National dance champion with expertise in urban dance styles',
       image:
-        'src/assets/trainer-riddhima-tiwari.jpg',
+        img3,
     },
     {
       name: 'Atul Tiwari',
@@ -26,7 +29,7 @@ const Trainers = () => {
       description:
         'Professional choreographer with background in competitive dancing',
       image:
-        'src/assets/trainer-atul-tiwari.jpg',
+        img1,
     },
     {
       name: 'Sonu J Hop',
@@ -34,7 +37,7 @@ const Trainers = () => {
       experience: '15 years',
       description: 'Professional Dancer with background in competitive dancing',
       image:
-        'src/assets/trainer-sonu-j-hop.jpg',
+        img4,
     },
   ];
 
