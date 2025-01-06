@@ -24,14 +24,14 @@ const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="/classes"
+            href="../classes"
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors flex items-center gap-2"
           >
             <Play size={20} />
             Explore Classes
           </a>
           <a
-            href="/contact"
+            href="../contact"
             className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-3 rounded-full font-semibold transition-colors"
           >
             Contact Us
