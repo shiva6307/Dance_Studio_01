@@ -1,6 +1,6 @@
 import React from 'react';
 import { Play } from 'lucide-react';
-
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div id="home" className="relative min-h-screen flex items-center justify-center">
@@ -23,19 +23,19 @@ const Hero = () => {
           Discover the joy of dance with our expert instructors and diverse range of classes
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="../classes"
+          <Link
+            to="/classes"
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors flex items-center gap-2"
           >
             <Play size={20} />
             Explore Classes
-          </a>
-          <a
-            href="../contact"
+          </Link>
+          <Link
+            to="/contact"
             className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-3 rounded-full font-semibold transition-colors"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </div>
